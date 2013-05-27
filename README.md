@@ -1,1 +1,2 @@
-# AD Bootcamp Track 100: Data First
+**AD Bootcamp Track 100**
+# Data First
