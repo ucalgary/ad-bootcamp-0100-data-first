@@ -123,7 +123,7 @@ h1 {
   box-sizing: border-box;
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, Geneva, sans-serif;
   font-size: 30px;
-  line-height: 1; }
+  line-height: 1.5; }
 
 /* fade out inactive slides */
 .step {
@@ -183,11 +183,15 @@ h1 {
 .slide p {
   margin: 1.25em 0; }
 .slide h1 {
-  line-height: 100%; }
-.slide ul, .slide p, .slide h2, .slide h3, .slide h4, .slide h5, .slide h6 {
+  line-height: 100%;
+  margin-bottom: .5em; }
+.slide p, .slide h2, .slide h3, .slide h4, .slide h5, .slide h6 {
   margin-top: 1em; }
-.slide li {
-  margin: 0 0 0.5em; }
+.slide ul {
+  list-style: disc;
+  margin-left: 1em; }
+  .slide ul p {
+    margin: 0; }
 
 .slide.title h1 {
   margin-top: 144px;
