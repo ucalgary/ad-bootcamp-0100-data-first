@@ -210,6 +210,26 @@ h1 {
   }
 }
 
+.slide.end {
+  text-align: center;
+  background-image: url(crest-end.png);
+  background-position: 50% 92%;
+  background-repeat: no-repeat;
+  background-size: 93px 96px;
+
+  h1 {
+    font-weight: 300;
+    font-size: 30px;
+    margin-top: 400px;
+    margin-bottom: .25em;
+  }
+
+  .published {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+}
+
 /* IMPRESS NOT SUPPORTED STYLES */
 
 .fallback-message {

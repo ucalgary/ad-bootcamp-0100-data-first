@@ -225,6 +225,21 @@ h1 {
   .slide.definition .pronunciation {
     color: #666; }
 
+.slide.end {
+  text-align: center;
+  background-image: url(crest-end.png);
+  background-position: 50% 92%;
+  background-repeat: no-repeat;
+  background-size: 93px 96px; }
+  .slide.end h1 {
+    font-weight: 300;
+    font-size: 30px;
+    margin-top: 400px;
+    margin-bottom: .25em; }
+  .slide.end .published {
+    font-size: 18px;
+    text-transform: uppercase; }
+
 /* IMPRESS NOT SUPPORTED STYLES */
 .fallback-message {
   font-family: sans-serif;
