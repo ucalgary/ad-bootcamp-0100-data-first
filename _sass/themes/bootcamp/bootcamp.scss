@@ -2,10 +2,16 @@
 
 body {
     font-family: $helvetica-neue;
+    font-weight: 300;
 
-    min-height: 740px;
+    min-height: 800px;
 
     background: $bg;
+    background: -webkit-radial-gradient(rgb(80, 80, 80), rgb(40, 40, 40));
+    background:    -moz-radial-gradient(rgb(80, 80, 80), rgb(40, 40, 40));
+    background:     -ms-radial-gradient(rgb(80, 80, 80), rgb(40, 40, 40));
+    background:      -o-radial-gradient(rgb(80, 80, 80), rgb(40, 40, 40));
+    background:         radial-gradient(rgb(80, 80, 80), rgb(40, 40, 40));   
 
     -webkit-font-smoothing: antialiased;
 
@@ -19,7 +25,7 @@ a {
     color: $softlight;
     text-decoration: underline;
     padding: 0 0.1em;
-    background: rgba(lighten($bg, 15%), .5);
+    /*background: rgba(lighten($bg, 15%), .5);*/
     border-radius: 0.2em;
 
     @include transition-property(background);
@@ -27,14 +33,14 @@ a {
 }
 
 a:hover {
-    background: rgba(lighten($bg, 15%),1);
+    /*background: rgba(lighten($bg, 15%),1);*/
 }
 
 h1 {
-  color: $highlight;
+  /*color: $highlight;*/
   font: {
-    weight: bold;
-    size: 2em;
+    weight: 400;
+    size: 56px;
   }
 }
 
@@ -48,8 +54,8 @@ h1 {
 
     font-family: $helvetica-neue;
 
-    font-size: 48px;
-    line-height: 1.5;
+    font-size: 30px;
+    line-height: 1;
 }
 
 /* fade out inactive slides */
@@ -92,25 +98,26 @@ h1 {
 
 .slide {
     display: block;
+    overflow: hidden;
 
-    width: 900px;
-    height: 700px;
+    /* 1024 × 768 slide size */
+    width: 896px;
+    height: 672px;
 
-    padding: 40px 60px;
+    padding: 48px 64px;
 
-    border-radius: 10px;
+    border-radius: 8px;
 
-    background-color: $base;
+    /*background-color: $base;*/
+    background-color: rgb(28, 28, 28);
 
     box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
-    border: 1px solid rgba(0, 0, 0, .3);
+    /*border: 0px solid rgba(0, 0, 0, .3);*/
 
     color: $text;
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 
     font-size: 30px;
-    line-height: 36px;
-
     letter-spacing: -1px;
 }
 
@@ -141,6 +148,65 @@ h1 {
 
   li {
     margin: 0 0 0.5em;
+  }
+}
+
+.slide.title {
+  h1 {
+    margin-top: 144px;
+    margin-bottom: 160px;
+    font-weight: 500;
+  }
+
+  .session {
+    font-size: 28px;
+    font-weight: 700;
+    color: rgb(236, 194, 4);
+    margin-bottom: .5em;
+  }
+
+  .vcard {
+    .n {
+      font-weight: 500;
+      font-size: 30px;
+      margin-bottom: .25em;
+    }
+
+    .title {
+      font-size: 24px;
+    }
+  }
+}
+
+.slide.image {
+  padding: 0;
+
+  h1 {
+    display: none;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  img {
+    display: block;
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  &.fillw img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.slide.definition {
+  font-family: "Baskerville", Georgia, serif;
+  
+  .pronunciation {
+    color: #666;
   }
 }
 
